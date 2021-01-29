@@ -23,7 +23,7 @@ $(function() {
             .then(res => {
                 console.log(res);
 
-                if (res.status !== 200) {
+                if (res.status !== 0) {
                     return layer.msg('注册失败')
                 }
                 layer.msg('注册成功')
